@@ -1,0 +1,31 @@
+{% extends 'parent.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %}
+    <title>home page</title>
+    {% endblock %}
+    
+</head>
+<body>
+  {% block body_block %}
+  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+      
+        <img class="d-block w-100" src="{% static 'images/welcome1.avif' %}"
+          alt="First slide">
+          
+      </div>
+      
+  </div>
+  {% endblock %}
+  
+
+  
+
+</body>
+</html>
